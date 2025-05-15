@@ -6,6 +6,7 @@ import { SignUp } from "./pages/SignUp";
 import { Login } from "./pages/Login";
 import { useLocation } from "react-router-dom";
 import { AnimatePresence } from "framer-motion";
+import {Strawberry} from "./pages/Strawberry";
 
 function App() {
   const location = useLocation();
@@ -18,6 +19,7 @@ function App() {
           <Route path="/main" element={<MainPage />} />
           <Route path="/signUp" element={<SignUp />} />
           <Route path="/login" element={<Login />} />
+          <Route path="/strawberry" element={<Strawberry/>}/>
         </Routes>
       </AnimatePresence>
     </>

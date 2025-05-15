@@ -1,6 +1,7 @@
 import { motion } from "framer-motion";
 import { useState } from "react";
 import "../styles/Forms.css";
+import { Header } from "./Header";
 
 export function Login() {
   const [name, setName] = useState("");
@@ -31,6 +32,7 @@ export function Login() {
       exit={{ opacity: 0, y: 10 }}
       transition={{ duration: 0.4 }}
     >
+      <Header/>
       <div>
         <h1 className="formTitle">Login</h1>
         <form onSubmit={handleSubmit} className="formContainer">
