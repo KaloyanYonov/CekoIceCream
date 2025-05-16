@@ -10,7 +10,7 @@ export function MainPage() {
 
   function buyNow({ flavor }) {
     if (testLogin) {
-      navigate(`/${flavor}`);
+      navigate(`/flavor/${flavor}`);
     } else {
       alert("You must login to continue *hint : press the Test login button!*");
     }
